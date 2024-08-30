@@ -1,8 +1,11 @@
 name: Greeting on variable day
 
-on: 
+
+on:
   push:
-    branches: [new-cli]
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 
 env: 
   Day_OF_WEEK: Monday
